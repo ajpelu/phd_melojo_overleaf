@@ -503,51 +503,24 @@
 % TODO command
 \definecolor{color_todo}{rgb}{.6,.8,.2}
 \newcommand{\TODO}[1]{{\color{color_todo}\textbf{[TODO #1]}}}
-%
-%
+
 % ref commands, e.g. for images, tables and text labels
-% --------------------------------------------------
-% RESULT = (siehe Tab. 12.4)
-\newcommand{\tabref}[1]{(siehe Tab.~\ref{#1})}
-%
-% RESULT = (siehe Tab. 12.4)
-\newcommand{\tableref}[1]{(siehe Tab.~\ref{#1} Seite~\pageref{#1})}
-%
-% --------------------------------------------------
-% RESULT = (siehe 3.4)
-\newcommand{\tref}[1]{(siehe \ref{#1})}
-%
-% RESULT = Abschnitt 3.4
-\newcommand{\treft}[1]{Abschnitt~\ref{#1}}
-%
-% RESULT = (siehe 3.4, Seite 12)
-\newcommand{\textref}[1]{(siehe \ref{#1}, Seite~\pageref{#1})}
-%
-% RESULT = Abschnitt 3.4 (siehe Seite 12)
-\newcommand{\textreft}[1]{Abschnitt~\ref{#1} (siehe Seite~\pageref{#1})}
-%
-% --------------------------------------------------
-% RESULT = (siehe Abb. 10.4)
-\newcommand{\fref}[1]{(siehe Abb.~\ref{#1})}
-%
-% RESULT = (siehe Abb. 10.4 b)
-\newcommand{\frefadd}[2]{(siehe Abb.~\ref{#1}~#2)}
-%
-% RESULT = (siehe Abb. 10.4, Seite 12)
-\newcommand{\figref}[1]{(siehe Abb.~\ref{#1}, Seite~\pageref{#1})}
-%
-% RESULT = (siehe Abb. 10.4 b, Seite 12)
-\newcommand{\figrefadd}[2]{(siehe Abb.~\ref{#1}~#2, Seite~\pageref{#1})}
-%
-% RESULT = Abbildung 10.4
-\newcommand{\figreft}[1]{Abbildung~\ref{#1}}
-%
-% RESULT = Abbildung 10.4 b
-\newcommand{\figrefaddt}[2]{Abbildung~\ref{#1}~#2}
-%
-% --------------------------------------------------
-% RESULT = (siehe Seite 12)
-\newcommand{\seepage}[1]{(siehe Seite~\pageref{#1})}
+% RESULT = Figure 1 
+\newcommand{\figref}[1]{Figure~\ref{#1}} 
+
+% RESULT = Figura 1
+\newcommand{\figreft}[1]{Figura~\ref{#1}} 
+
+% RESULT = Fig. 1 
+\newcommand{\fref}[1]{Fig.~\ref{#1}} 
+
+% TABLE REFERENCES 
+% RESULT = Table 1
+\newcommand{\tabref}[1]{Table~\ref{#1}} 
+
+% RESULT = Tabla 1
+\newcommand{\tabreft}[1]{Tabla~\ref{#1}} 
+
 
 
 % **************************************************
