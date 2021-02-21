@@ -1,0 +1,100 @@
+% !TEX root = thesis_qp_ajpelu.tex
+
+
+% **************************************************
+% Files' Character Encoding
+% **************************************************
+\PassOptionsToPackage{utf8}{inputenc}
+\usepackage{inputenc}
+
+\usepackage[english, spanish]{babel}
+
+% **************************************************
+% Information and Commands for Reuse
+% **************************************************
+\newcommand{\Qpw}{\textit{Quercus pyrenaica} Willd.\xspace}
+\newcommand{\Qpy}{\textit{Quercus pyrenaica}\xspace}
+\newcommand{\Qp}{\textit{Q. pyrenaica}\xspace}
+
+\newcommand{\thesisTitle}{Anáisis de la dinámica de los robledales (\Qpw) frente al cambio global en el límite sur de su distribución (Sierra Nevada)}
+\newcommand{\thesisName}{Antonio J. P\'erez Luque}
+\newcommand{\thesisSubject}{Biología Fundamental y de Sistemas}
+\newcommand{\thesisDate}{Marzo, 2021}
+\newcommand{\thesisVersion}{v1.1}
+
+\newcommand{\thesisFirstReviewer}{Jane Doe}
+\newcommand{\thesisFirstReviewerUniversity}{\protect{Clean Thesis Style University}}
+\newcommand{\thesisFirstReviewerDepartment}{Department of Clean Thesis Style}
+
+\newcommand{\thesisSecondReviewer}{John Doe}
+\newcommand{\thesisSecondReviewerUniversity}{\protect{Clean Thesis Style University}}
+\newcommand{\thesisSecondReviewerDepartment}{Department of Clean Thesis Style}
+
+\newcommand{\thesisFirstSupervisor}{Regino Jesús Zamora Rodr\'iguez\xspace}
+\newcommand{\thesisSecondSupervisor}{Francisco Javier Bonet Garc\'ia\xspace}
+
+\newcommand{\thesisUniversity}{\protect{Clean Thesis Style University}}
+\newcommand{\thesisUniversityDepartment}{Department of Clean Thesis Style}
+\newcommand{\thesisUniversityInstitute}{Institute for Clean Thesis Dev}
+\newcommand{\thesisUniversityGroup}{Clean Thesis Group (CTG)}
+\newcommand{\thesisUniversityCity}{City}
+\newcommand{\thesisUniversityStreetAddress}{Street address}
+\newcommand{\thesisUniversityPostalCode}{Postal Code}
+
+% **************************************************
+% Debug LaTeX Information
+% **************************************************
+%\listfiles
+
+
+
+% **************************************************
+% Load and Configure Packages
+% **************************************************
+%\usepackage[english, spanish]{babel} % babel system, adjust the language of the content
+\PassOptionsToPackage{% setup clean thesis style
+    figuresep=colon,%
+    hangfigurecaption=false,%
+    hangsection=true,%
+    hangsubsection=true,%
+    sansserif=false,%
+    configurelistings=true,%
+    colorize=full,%
+    colortheme=bluegreen,%
+    configurebiblatex=true,%
+    bibsys=bibtex,%
+    bibfile=referencias,%
+    bibstyle=authoryear,%
+    bibsorting=nyt, %
+}{cleanthesis}
+\usepackage{cleanthesis}
+
+\hypersetup{% setup the hyperref-package options
+    pdftitle={\thesisTitle},    %   - title (PDF meta)
+    pdfsubject={\thesisSubject},%   - subject (PDF meta)
+    pdfauthor={\thesisName},    %   - author (PDF meta)
+    plainpages=false,           %   -
+    colorlinks=false,           %   - colorize links?
+    pdfborder={0 0 0},          %   -
+    breaklinks=true,            %   - allow line break inside links
+    bookmarksnumbered=true,     %
+    bookmarksopen=true          %
+}
+
+% **************************************************
+% Other Packages
+% **************************************************
+\usepackage{scrhack}
+\usepackage{booktabs}			% fot tables 
+\usepackage{ragged2e}			% justificar texto
+\usepackage{rotating}			  % Rotar tablas
+\usepackage{adjustbox}		% Para las tablas largas y rotadas
+\usepackage{threeparttable}   % Idem 
+
+% **************************************************
+% Commands for biblbliography
+% **************************************************
+
+\DefineBibliographyStrings{spanish}{%
+	andothers = {et\addabbrvspace al\adddot}
+}
