@@ -50,3 +50,81 @@ The study was conducted at the Sierra Nevada (Andalusia, SE Spain; \figref{fig:l
 \end{adjustbox}
 \end{sidewaystable}
 
+\emph{Quercus pyrenaica} is a deciduous species extending through southwestern France, the Iberian Peninsula and northern Morocco \autocite{Franco1990Quercus}. The forests of this species reach their southernmost European limit in Andalusian mountains such as Sierra Nevada, where eight populations have been identified (\figref{fig:location-map}a; \tabref{tab:tpop}) on the basis of their isolated geographic locations in deep valleys separated by distances considerably longer than the average dispersal distances of the seeds by birds such as Eurasian jay (\emph{Garrulus glandarius}) \autocite{Gomez2003SpatialPatterns,ValbuenaCarabanaetal2005GeneFlow}. They are distributed on siliceous soils both in the northwestern and southern slopes of the mountain range and are often associated to major river valleys. These oak woodlands represent a rear edge of their distribution \autocite{HampePetit2005ConservingBiodiversity}, containing high levels of intraspecific genetic diversity \autocite{ValbuenaCarabanaGil2013GeneticResilience}. Their conservation status for southern Spain is ``Vulnerable'', and it is expected to suffer from climate change, potentially reducing its suitable habitats in the near future \autocite{GeaIzquierdoetal2013GrowthProjections,GeaIzquierdoetal2017RiskyFuture}.
+
+The distribution of \emph{Q. pyrenaica} forests in Sierra Nevada was delimited using the updated version of the forest map of Sierra Nevada at 1:10 000 scale \autocite{CMAOT2014CartografiaEvaluacion,PerezLuqueetal2019MapEcosystems}. Black and white ortophotographies from 2001 (0.5-m of spatial resolution) and false color aerial photographies (Color Infrared) from 2005 (1-m resolution) were used to correct errors by detailed photographic interpretation, resulting in a detailed map of oak forests (\figref{fig:location-map}b). Forest patches with at least 50 \% tree cover of which 75 \% cover being \emph{Q. pyrenaica} were considered oak patches.
+
+\subsection{Environmental data}\label{sec:multivar:EnvData}
+For each oak population we obtained the values of 30 environmental variables selected to represent different direct and indirect gradients important for plant distribution \autocite{GuisanZimmermann2000PredictiveHabitat,Williamsetal2012WhichEnvironmental}: temperature, water availability, topography, solar radiation and land-use (\tabref{tab:tvars}). Observed climate data (1960-2010) from 43 meteorological stations 50 km around Sierra Nevada, compiled by Sierra Nevada Global Change Observatory \autocite{Zamoraetal2017GlobalChange}, were used as input to compute high resolution (100 x 100 m pixel-size) climate maps \autocite{Benitoetal2014ClimateSimulations} based on the mapping method proposed by \textcite{Ninyerolaetal2000MethodologicalApproach}. Seasonal and annual maps with the averages of direct solar radiation and insolation time were computing using the GIS GRASS module r.sun \autocite{Neteleretal2012GRASSGIS,SuriHofierka2004NewGISbased}. From a high-resolution digital elevation model (10-m; Department of the Environment, Regional Government of Andalusia) several topographic variables were derived: elevation, slope, aspect, E-W and N-S gradients, topographic position (difference in elevation between a cell and surrounding cells within a 1000 meter radius)\autocite{Guisanetal1999GLMCCA}. Also, topographic wetness index and flow accumulation were computed using the r.terraflow module of GRASS GIS. As a surrogate of anthropogenic influence, we computed the frequency of human infrastructures in a 2000 meter radius buffer. Finally, for each environmental variable we extracted the values for all the 100 m size pixels contained within each oak population (\figref{fig:schemamulti}).
+
+\begin{table}[H]
+\caption{Description of environmental variables and forest attributes used in our analysis}\label{tab:tvars}
+\centering
+\begingroup\fontsize{7}{9}\selectfont
+\begin{tabular}{llll} 
+\toprule
+\textbf{Category} & \textbf{Code} & \textbf{Description} & \textbf{Units} \\ 
+\midrule
+\multirow{}{}{Climate} & precYE & Annual precipitation & mm \\
+ & precSU & Summer precipitation & mm \\
+ & precAU & Autumn precipitation & mm \\
+ & precWI & Winter precipitation & mm \\
+ & precSP & Spring precipitation & mm \\
+ & tmaxSU & Summer mean maximum temperature & º C \\
+ & tmaxAU & Autumn mean maximum temperature & º C \\
+ & tmaxWI & Winter mean maximum temperature & º C \\
+ & tmaxSP & Spring mean maximum temperature & º C \\
+ & tminSU & Summer mean minimum temperature & º C \\
+ & tminAU & Autumn mean minimum temperature & º C \\
+ & tminWI & Winter mean minimum temperature & º C \\
+ & tminSP & Spring mean minimum temperature & º C \\ 
+\hline
+\multirow{}{}{Topography} & elev & Elevation & meter \\
+ & aspect & Aspect & º \\
+ & slope & Slope & º \\
+ & tpNS & North-South gradient & \% \\
+ & tpEW & East-West gradient & \% \\ 
+ & radSU & Summer direct radiation & Wh m^{-2} \\
+ & radAU & Autumn direct radiation & Wh m^{-2} \\
+ & radWI & Winter direct radiation & Wh m^{-2} \\
+ & radSP & Spring direct radiation & Wh m^{-2} \\
+ & radhSU & Mean duration of insolation in Summer & hour \\
+ & radhAU & Mean duration of insolation in Autumn & hour \\
+ & radhWI & Mean duration of insolation in Winter & hour \\
+ & radhSP & Mean duration of insolation in Spring & hour \\
+ & twi & Topographic wetness index &  \\
+ & tpos & Topographic position & meter \\
+ & flow & Flow accumulation &  \\ 
+\hline
+Landscape & human & Anthropogenic influence & cells \\ 
+\hline
+\multirow{}{}{Forest structure} & FCC & Forest canopy cover & \% \\
+ & FCCTree & Forest canopy cover of Tree & \% \\
+ & FCCShru & Forest canopy cover of Shrub & \% \\
+ & FCCHerb & Forest canopy cover of Herbaceous & \% \\
+ & CCshann & Canopy Cover diversity &  \\
+ & heiTree & Tree Height & m \\
+ & denTree & Density & trees ha^{-1} \\
+ & BA & Basal area & m^2 ha^{-1} \\
+ & vol & Volume & m^{3} ha^{-1} \\ 
+\hline
+\multirow{}{}{Forest biodiversity} & diver & Plant diversity &  \\
+ & rich & Richness & species number \\ 
+\hline
+\multirow{}{}{Forest function} & regTot & Total regeneration & total seedling number \\
+ & regQp & Pyrenean Oak regeneration & seedling number \\
+ & regQi & Holm Oak regeneration & seedling number \\
+\hline
+\end{tabular}
+\endgroup{}
+\end{table}
+
+\subsection{Forest attributes}\label{sec:multivar:ForAtri}
+To characterize oak patches, we selected several stand attributes relating to forest structure, function, and composition from Sierra Nevada Forest Inventory \autocite[SINFONEVADA,][]{PerezLuqueetal2014SinfonevadaDataset} ( \tabref{tab:tvars}). By using this approach, we characterized the plant community both in terms of their species composition, and also regarding their ecological functioning \autocite{McElhinnyetal2005ForestWoodland,delRioetal2016CharacterizationStructure}. SINFONEVADA forest inventory was carried out during 2004-2005, and it includes an extensive network of plots distributed within the main forest units of Sierra Nevada mountain range. We selected 32 plots belonging to deciduous broadleaf forests category. All of them are located within the eight Pyrenean oak populations identified in Sierra Nevada. For each plot (20 x 20 m), all trees with diameter at breast height (dbh) \textgreater{} 7.5 cm were tallied by species and dbh. Regeneration, species composition and abundance were also recorded in two additional subplots \autocite[see][ for a detailed description]{PerezLuqueetal2014SinfonevadaDataset}: a 5-m radius subplot where the seedling abundance of \emph{Q. pyrenaica} was recorded; and a 10-m radius subplot where the species composition and abundance estimated by the Braun-Blanquet cover-abundance scale were measured \autocite{BraunBlanquet1964PflanzensoziologieGrundzuge} (See \tabref{tab:s1}).
+
+Forest composition (richness) and plant diversity were used as indicator for overall forest biodiversity. Plant diversity was measured using the Shannon diversity index \autocite{Krebs1999EcologicalMethodology}. The total regeneration was used as proxy for forest functioning. Finally, as forest structure indicators we selected the following attributes: the total- and strata- (\emph{i.e.} tree, shrub and herbaceous) canopy cover; canopy cover diversity; tree height, tree density, basal area and volume of adult tree. Canopy covers were computed as the proportion of plot area covered by the whole forest (total) and the different strata considered (tree, shrub and herbaceous respectively). Canopy cover diversity was quantified through the Shannon index for the proportion of plot area covered by different vegetation strata (tree, shrub and herbaceous) according with the following equation: \[CCd'=\sum_{i=1}^{n} g_i \cdot \ln g_i\] where \(g_i\) is the proportion of strata \(i\) of the total plot area and \(n\) is the number of strata \autocite{DelRioetal2003IndicesStand}. Basal area was calculated as the sum of the basal areas of the adult trees assuming a circular cross-section of the trunk. Volume was calculated as sum of volume (\(V = 0.55 \cdot \textrm{height} \cdot \textrm{diameter}^2\)) of all \emph{Q. pyrenaica} adult trees. Additionally, we also extracted the values of the environmental variables for the centroids of the plots and we added a species-composition matrix for each of the 32 selected plots.
+
+\begin{figure}
+\centering
+\includegraphics[height= 13cm]{img/multivariante/schema} \caption{Methodological scheme of the analyses. Using an environmental data matrix, the main environmental gradients that characterize the oak forests at Sierra Nevada were identified using a Principal Component Analysis (PCA). Linear Discriminant Analysis (LDA) was also applied to identify different groups of oak populations. With a matrix of floristic composition, a Non-metric Multidimensional Scaling (NMDS) ordination were applied to visualize patterns of species composition, interpret them according to the environmental factors, and identify groups of oak populations based on similarities between floristic composition. See material and methods for more details.} \label{fig:schemamulti}
+\end{figure}

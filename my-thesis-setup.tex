@@ -90,11 +90,11 @@
 \usepackage{rotating}			  % Rotar tablas
 \usepackage{adjustbox}		% Para las tablas largas y rotadas
 \usepackage{threeparttable}   % Idem 
-
+\usepackage{float}          % para decidir donde colocar las tablas 
 % **************************************************
 % Commands for biblbliography
 % **************************************************
 
 \DefineBibliographyStrings{spanish}{%
-	andothers = {et\addabbrvspace al\adddot}
+	andothers = {\emph{et}\addabbrvspace \emph{al\adddot}}
 }
