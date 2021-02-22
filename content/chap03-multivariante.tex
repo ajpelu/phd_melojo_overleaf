@@ -57,6 +57,8 @@ The distribution of \emph{Q. pyrenaica} forests in Sierra Nevada was delimited u
 \subsection{Environmental data}\label{sec:multivar:EnvData}
 For each oak population we obtained the values of 30 environmental variables selected to represent different direct and indirect gradients important for plant distribution \autocite{GuisanZimmermann2000PredictiveHabitat,Williamsetal2012WhichEnvironmental}: temperature, water availability, topography, solar radiation and land-use (\tabref{tab:tvars}). Observed climate data (1960-2010) from 43 meteorological stations 50 km around Sierra Nevada, compiled by Sierra Nevada Global Change Observatory \autocite{Zamoraetal2017GlobalChange}, were used as input to compute high resolution (100 x 100 m pixel-size) climate maps \autocite{Benitoetal2014ClimateSimulations} based on the mapping method proposed by \textcite{Ninyerolaetal2000MethodologicalApproach}. Seasonal and annual maps with the averages of direct solar radiation and insolation time were computing using the GIS GRASS module r.sun \autocite{Neteleretal2012GRASSGIS,SuriHofierka2004NewGISbased}. From a high-resolution digital elevation model (10-m; Department of the Environment, Regional Government of Andalusia) several topographic variables were derived: elevation, slope, aspect, E-W and N-S gradients, topographic position (difference in elevation between a cell and surrounding cells within a 1000 meter radius)\autocite{Guisanetal1999GLMCCA}. Also, topographic wetness index and flow accumulation were computed using the r.terraflow module of GRASS GIS. As a surrogate of anthropogenic influence, we computed the frequency of human infrastructures in a 2000 meter radius buffer. Finally, for each environmental variable we extracted the values for all the 100 m size pixels contained within each oak population (\figref{fig:schemamulti}).
 
+\newcommand{\Whm}{\(\mathrm{W \cdot h \cdot m^{-2}}\)}
+
 \begin{table}[H]
 \caption{Description of environmental variables and forest attributes used in our analysis}\label{tab:tvars}
 \centering
@@ -84,10 +86,10 @@ For each oak population we obtained the values of 30 environmental variables sel
  & slope & Slope & º \\
  & tpNS & North-South gradient & \% \\
  & tpEW & East-West gradient & \% \\ 
- & radSU & Summer direct radiation & Wh m^{-2} \\
- & radAU & Autumn direct radiation & Wh m^{-2} \\
- & radWI & Winter direct radiation & Wh m^{-2} \\
- & radSP & Spring direct radiation & Wh m^{-2} \\
+ & radSU & Summer direct radiation & \Whm \\
+ & radAU & Autumn direct radiation & \Whm \\
+ & radWI & Winter direct radiation & \Whm \\
+ & radSP & Spring direct radiation & \Whm \\
  & radhSU & Mean duration of insolation in Summer & hour \\
  & radhAU & Mean duration of insolation in Autumn & hour \\
  & radhWI & Mean duration of insolation in Winter & hour \\
@@ -105,8 +107,8 @@ Landscape & human & Anthropogenic influence & cells \\
  & CCshann & Canopy Cover diversity &  \\
  & heiTree & Tree Height & m \\
  & denTree & Density & trees ha^{-1} \\
- & BA & Basal area & m^2 ha^{-1} \\
- & vol & Volume & m^{3} ha^{-1} \\ 
+ & BA & Basal area & \(\mathrm{m^2 \cdot h^{-1}}\) \\
+ & vol & Volume & \(\mathrm{m^3 \cdot h^{-1}}\)\\ 
 \hline
 \multirow{}{}{Forest biodiversity} & diver & Plant diversity &  \\
  & rich & Richness & species number \\ 
