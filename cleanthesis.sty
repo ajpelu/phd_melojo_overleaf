@@ -92,6 +92,7 @@
 \define@choicekey*[ct]{cthesis}{bibsys}[\val\bibsysnr]{biber,bibtex}[bibtex]{\def\cthesis@bibsys{#1}}
 \setkeys[ct]{cthesis}{bibsys=bibtex}
 
+
 % OPTION bibfile
 % --> values = file name of your bibtex file
 \define@key[ct]{cthesis}{bibfile}[bib-refs]{\def\cthesis@bibfile{#1}}
@@ -298,7 +299,8 @@
 \ifct@cthesis@configurebiblatex
 	\RequirePackage[					% use biblatex for bibliography
 		backend=\cthesis@bibsys,		% 	- use biber backend (bibtex replacement) or bibtex
-		style=\cthesis@bibstyle,		% 	- use alphabetic (or numeric) bib style
+		% style=\cthesis@bibstyle,		% 	- use alphabetic (or numeric) bib style
+		style=apa, 
 		natbib=true,					% 	- allow natbib commands
 		hyperref=true,					% 	- activate hyperref support
 		backref=false,					% 	- activate backrefs 
