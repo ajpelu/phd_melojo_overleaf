@@ -129,18 +129,148 @@
 
 \chapter{Material Suplementario del  \autoref{sec:dendro}}\label{sec:appendix:dendro}
 
+\begin{table}[h]
+\caption{Robust two-way ANOVAs of the resilience metrics of greenness (EVI) and tree growth (BAI) for the two drought events (in 2005 and 2012) and site.}
+\label{tab:dendro:robustanova}
+\begingroup\fontsize{8}{10}\selectfont
+\begin{tabular}{@{}llllrllrllr@{}}
+\toprule
+ &  &  & \textbf{Resistance} &  &  & \textbf{Recovery} &  &  & \textbf{Resilience} &  \\ \midrule
+ & \textbf{Factor} &  & \textbf{F} & \textit{p} &  & \textbf{F} & \textit{p} &  & \textbf{F} & \textit{p} \\ \cmidrule(lr){4-5} \cmidrule(lr){7-8} \cmidrule(l){10-11} 
+\multirow{}{}{EVI} & Drought event &  & 799.9 & \textless 0.001 &  & 312.0 & \textless 0.001 &  & 207.2 & \textless 0.001 \\
+ & Site &  & 153.2 & \textless 0.001 &  & 105.4 & \textless 0.001 &  & 29.8 & \textless 0.001 \\
+ & Drought event $\times$ Site &  & 234.7 & \textless 0.001 &  & 364.3 & \textless 0.001 &  & 6.1 & 0.014 \\ \midrule
+\multirow{}{}{BAI} & Drought event &  & 6.0 & 0.019 &  & 29.5 & \textless 0.001 &  & 44.3 & \textless 0.001 \\
+ & Site &  & 59.3 & \textless 0.001 &  & 53.1 & \textless 0.001 &  & 1.3 & 0.534 \\
+ & Drought event $\times$ Site &  & 32.2 & \textless 0.001 &  & 4.4 & 0.134 &  & 30.0 & \textless 0.001 \\ \bottomrule
+\end{tabular}
+\endgroup{}
+\end{table}
+
+\begin{table}[h]
+\caption{Drought events for the 1901-2016 period for Sierra Nevada ranked according to drought severity calculated from the SPEI index (12 months scale).}
+\label{tab:dendro:droughts}
+\centering
+\begingroup\fontsize{9}{10}\selectfont
+\begin{tabular}{@{}cccccc@{}}
+\toprule
+\textbf{Duration (months)} & \textbf{Intensity} & \textbf{Severity} & \textbf{Lowest SPEI} & \textbf{Months} & \textbf{Year} \\ \midrule
+11 & -1.957 & 21.524 & -2.585 & Jan - Nov & 1995 \\
+11 & -1.581 & 17.391 & -2.024 & Nov - Sep & 1913-1914 \\
+9 & -1.823 & 16.409 & -2.42 & May - Jan & 1945-1946 \\
+9 & -1.764 & 15.88 & -2.056 & Dec - Aug & 1998-1999 \\
+8 & -1.482 & 11.859 & -1.654 & Feb - Sep & 1983 \\
+6 & -1.728 & 10.367 & -1.906 & Mar - Aug & 2012 \\
+5 & -1.905 & 9.527 & -2.3 & Jan - May & 1925 \\
+5 & -1.522 & 7.611 & -1.571 & May - Sep & 2005 \\
+5 & -1.493 & 7.463 & -1.537 & May - Sep & 1985 \\
+5 & -1.385 & 6.926 & -1.444 & Apr - Aug & 1991 \\
+4 & -1.714 & 6.855 & -1.833 & May - Aug & 1931 \\
+4 & -1.363 & 5.453 & -1.441 & May - Aug & 1927 \\ \bottomrule
+\end{tabular}
+\endgroup{}
+\end{table}
+
+
+\begin{sidewaystable} 
+\caption{Robust measures of central tendency of resilience indices for greenness (EVI) and tree growth (BAI), grouped by drought events, site, and interaction. Measures of central tendency are M-estimators based on Huber’s Psi. In parentheses are the 95\% confidence intervals using 3000 bootstraps. Total corresponds to the average of 2005 and 2012}
+\label{tab:dendro:huber}
+\begin{adjustbox}{width=\linewidth}
+\begin{threeparttable}
+\begin{tabular}{@{}ll|ccc|ccc|cccl@{}}
+ &  & \multicolumn{1}{l}{} & \textbf{2005} & \multicolumn{1}{l|}{} & \multicolumn{1}{l}{} & \textbf{2012} & \multicolumn{1}{l|}{} & \multicolumn{1}{l}{} & \textbf{Total} & \multicolumn{1}{l}{} &  \\ \cmidrule(r){1-11}
+\textbf{Variable} & \textbf{Sites} & \textbf{Resistance} & \textbf{Recovery} & \textbf{Resilience} & \textbf{Resistance} & \textbf{Recovery} & \textbf{Resilience} & \textbf{Resistance} & \textbf{Recovery} & \textbf{Resilience} &  \\ \cmidrule(r){1-11}
+\textbf{EVI} & Northern slope & 0.819 & 1.169 & 0.955 & 0.947 & 1.042 & 0.986 & 0.884 & 1.102 & 0.97 &  \\
+ &  & (0.814 - 0.824) & (1.161 - 1.177) & (0.951 - 0.960) & (0.942 - 0.952) & (1.036 - 1.047) & (0.980 - 0.990) & (0.878 - 0.889) & (1.096 - 1.108) & (0.967 - 0.974) &  \\ \cmidrule(lr){2-11}
+ & Southern slope & 0.902 & 1.066 & 0.962 & 0.939 & 1.071 & 1.004 & 0.921 & 1.069 & 0.983 &  \\
+ &  & (0.896 - 0.907) & (1.058 - 1.074) & (0.957 - 0.966) & (0.934 - 0.944) & (1.067 - 1.075) & (1.000 - 1.008) & (0.917 - 0.925) & (1.065 - 1.073) & (0.980 - 0.986) &  \\ \cmidrule(lr){2-11}
+ & All & 0.858 & 1.12 & 0.958 & 0.943 & 1.057 & 0.995 &  &  &  &  \\
+ &  & (0.854 - 0.863) & (1.113 - 1.126) & (0.955 - 0.962) & (0.940 - 0.947) & (1.054 - 1.060) & (0.991 - 0.998) &  &  &  &  \\ \cmidrule(r){1-11}
+\textbf{BAI} & CA-High & 0.892 & 0.887 & 0.79 & 0.753 & 1.107 & 0.813 & 0.816 & 0.996 & 0.798 &  \\
+ &  & ( 0.809 - 0.975) & ( 0.800 - 0.973) & ( 0.691 - 0.888) & ( 0.686 - 0.820) & ( 1.026 - 1.188) & ( 0.741 - 0.885) & ( 0.755 - 0.876) & ( 0.917 - 1.075) & ( 0.744 - 0.851) &  \\ \cmidrule(lr){2-11}
+ & CA-Low & 0.901 & 0.832 & 0.73 & 0.926 & 0.952 & 0.876 & 0.921 & 0.897 & 0.817 &  \\
+ &  & ( 0.813 - 0.989) & ( 0.733 - 0.932) & ( 0.612 - 0.849) & ( 0.900 - 0.953) & ( 0.889 - 1.015) & ( 0.839 - 0.913) & ( 0.883 - 0.958) & ( 0.843 - 0.951) & ( 0.755 - 0.879) &  \\ \cmidrule(lr){2-11}
+ & SJ & 0.445 & 1.112 & 0.489 & 0.769 & 1.446 & 1.031 & 0.612 & 1.282 & 0.769 &  \\
+ &  & ( 0.375 - 0.516) & ( 1.000 - 1.224) & ( 0.421 - 0.556) & ( 0.684 - 0.853) & ( 1.322 - 1.569) & ( 0.930 - 1.132) & ( 0.539 - 0.685) & ( 1.179 - 1.386) & ( 0.652 - 0.886) &  \\ \cmidrule(lr){2-11}
+ & All & 0.721 & 0.946 & 0.653 & 0.819 & 1.161 & 0.911 &  &  &  &  \\
+ &  & ( 0.644 - 0.798) & ( 0.879 - 1.013) & ( 0.585 - 0.721) & ( 0.776 - 0.863) & ( 1.081 - 1.240) & ( 0.865 - 0.957) &  &  &  &  \\ \bottomrule
+\end{tabular}
+\end{threeparttable}
+\end{adjustbox}
+\end{sidewaystable}
+
+\begin{table} 
+\caption{Review of the forest and management history of the sampling sites. Historical documents were exhaustively reviewed to compile information on socio-economical activities affecting forests: historical documents and maps \autocite[\emph{e.g.}][]{Titos}; detailed mining reports \autocite[\emph{e.g.}][]{Maestre1858}; official information on recent wildfire events and forest-management practices \autocite[\emph{e.g.}][]{Bonet2016obsnevforest}; livestock farming \autocite[\emph{e.g.}][]{MorenoLlorca2016}; traditional irrigation ditches \autocite[\emph{e.g.}][]{RuizRuiz2017} and other studies reviewing the socioeconomic dynamics of forest of Sierra Nevada at different scales \autocite[\emph{e.g.}][]{JimenezOlivencia2015}.}
+\label{tab:dendro:reviewusos}
+\centering
+\begingroup\tiny\selectfont
+\begin{tabular}{
+>{\centering\arraybackslash}p{0.1\textwidth}>{\raggedright\arraybackslash}p{0.3\textwidth}>{\raggedright\arraybackslash}p{0.3\textwidth}>{\raggedright\arraybackslash}p{0.2\textwidth}}
+\toprule
+\textbf{Use} & \textbf{Cáñar (CA sites)} & \textbf{Güejar-Sierra (SJ site)} & \textbf{References} \\
+\midrule
+\textbf{Land uses} & Oak woodlands mixed with a high percentage of croplands even reached high elevation (mainly barley, rye and potatoes). Irrigated crops near the village (\textit{regadío de vega}) & Grasslands and shrublands for cattle farming located at high elevations. Then forests formations (oak woodlands) with some croplands (herbaceous mainly and potatoes). Irrigated terraces with tree crops (chestnut trees, cherry trees) & \textcite{Calatrava2019}; \textcite{JimenezOlivencia2015}; \textcite{MorenoLlorca2016}; \textcite{2015Zoido}\\ \midrule
+\textbf{Forest Managment Practices} & Nearby areas were afforested (pine plantations) to avoid soil erosion in 1925, 1928, 1950 and 1970. & Afforestation of the upper areas of the Genil River basin (1942)Puntual afforestation (creation of small \textit{dispersal islands}) (2008) & \textcite{Bonet2016obsnevforest}; \textcite{MorenoLlorca2016}; J. Navarro and F.J. Cano-Manuel \textit{personal communications} \\
+ & Selective thinning during 2007 in small area near \textit{Casa Forestal} & Tree cleaning (2006 - 2007) near our sudy site (\textit{La Hortichuela}) &  \\
+ & Tree cleaning near trails-path (2009-2010) & Puntual afforestation (creation of small \textit{dispersal islands}) (2008) &  \\ \midrule
+\textbf{Forest structure} & Inventories of trees made by the Spanish Navy during the second half of 18th century. For Cáñar site more than two millions of trees were reported, most of them \textit{new trees} (\textit{new trees}= 2010200;  \textit{growing trees}: 10791), and no \textit{old trees} were counted, suggesting recent wood fellings & Inventories of trees made by the Spanish Navy during the second half of 18th century. For San Juan location circa 700000 trees were reported: \textit{new trees}= 639550;  \textit{growing trees} = 56700; and \textit{old trees}= 220) & \textcite{Cruz1991}; \textcite{Wing2015} \\ \midrule
+\textbf{Fires} & Several small fires. 1979: 44 ha of Pyrenean oak forests (near \textit{Casa Forestal}). 1984: 189 ha of Pine plantation and Holm oak forests (\textit{El Jaral}). 1994: 65 ha of Pine plantation (\textit{Puente Palo}) & Not recorded in the area since 1975 & \textcite{Bonet2014conama, MorenoLlorca2016,CMA2018} \\ \midrule
+\textbf{Fruit production (acorns)} & Old references have indicated traditional acorn gathering. Auctions of public forests to collect acorns (1927; 1954) &  & \textcite{Bonet2014conama}; \textcite{Catastro1752}; \textcite{MesaTorres2009} \\ \midrule
+\textbf{Wood} & Traditional charcoal (\textit{carboneo}) and firewood extraction activities through history. Several references indicated the firewood activity of this site since 1572. At the beginning of the last century (1900s), 3 - 4 woodcutters collected firewood from Pyrenean forests daily. & Some references of wood removal for subsistence (1826; 1847). Massive logging during the first decades of 20th century. As a result, several old photos show areas without trees where oak forests stand today (1925; 1932) & \textcite{Bonet2014conama}; \textcite{Catastro1752}; \textcite{Ferrer1999}; \textcite{Lopez1776}; \textcite{MesaTorres2009}; \textcite{Madoz1846}; \textcite{Titos1997} \\ \midrule
+\textbf{Mining activities} & No mining in the area, only scattered private excavations & Intermittent exploitation throughout history. Historical documents indicated two periods of intense mining: the second half of the 19th century after the publication of detailed mineralogical reports and during the first decades of the 20th century until 1960, which is the last year with evidence of mining. Evidence of several furnaces to melt minerals (Cooper) & \textcite{Maestre1852} ; \textcite{Maestre1858}; \textcite{MesaTorres2009}; \textcite{Titos1990} \\ \midrule
+\textbf{Quarries} &  & Explotation of serpentinites quarries from 16th to 19th century (\textit{Jaspe Verde}) & \textcite{Navarro2014} \\ \midrule
+\textbf{Traditional irrigation channels} & An irrigation channel (\textit{Acequia de la Era Alta}) is located uphill of the CA-High site (\textit{i.e.} \textgreater 2000 m), which functioned from March to June & Several historical irrigation channels, known as \textit{acequias de careo}, were used since the Middle Ages to cultivate these valleys. Most are abandoned and deteriorated, probably at least since the 1960s. & \textcite{MartinCivantos2014}; \textcite{MartinMontanes2015}; \textcite{RuizRuiz2017} \\
+\bottomrule
+\end{tabular}
+\endgroup{} 
+\end{table}
+
+
 \begin{figure}
 \centering
 \includegraphics[width=\textwidth]{img/dendro/dendro-s1climate} 
 \caption{\textbf{a)} Temporal evolution of cumulative precipitation (hydrological year) during the period 1950-2017. Points represent the mean, and error bars the standard error. The black line indicates mean for the entire period (585 mm). The red lines represent -1 and -2 standard deviation (dotted and dashed lines, respectively). The blue lines represent +1 and +2 standard deviation (dotted and dashed lines, respectively). Years with average values below -1SD are labeled. Data from 28 meteorological stations distributed around the Sierra Nevada area (from the National Spanish Meteorological Services, AEMET). Inset plot: cumulative precipitation during the hydrological years 2004-2005 (blue line) and 2011-2012 (red line). The boxplot representing the average from 1950-2015 period. Data from meteorological station Granada, Base Aérea. \textbf{b)} Drought severity in Sierra Nevada for the 1901-2016 period based on the Standardized Precipitation-Evapotranspiration Index (SPEI). Data from Global SPEI database (http://spei.csic.es/database.html). We took the SPEI data for a 12-month scale and for all 0.5\textdegree grid cells covering Sierra Nevada. Horizontal gray bars indicate the years 2005 and 2012.}  
-\label{fig:dendro:s1-climate}
+\label{fig:dendro:s1climate}
+\end{figure}
+\newpage
+
+
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{img/dendro/dendro-s2chronos} 
+\caption{\textbf{a)} Residual tree-ring chronologies determined for the \Qp sites. Dashed red lines indicate the start of the reliable period (EPS > 0.85). Dotted black lines show the severe drought years identified in our climatic data (Table S3 and Figure S1). b) Percentage of \Qp trees affected by GC > 50 \% by site. Black line shows number of trees (right-axis). Data for number of trees > 2 is shown.
+}  
+\label{fig:dendro:s2chronos}
 \end{figure}
 
 \newpage
 \begin{figure}
 \centering
-\includegraphics[height=14 cm]{img/dendro/dendro-s2chronos} 
-\caption{\textbf{a)} Residual tree-ring chronologies determined for the \Qp sites. Dashed red lines indicate the start of the reliable period (EPS > 0.85). Dotted black lines show the severe drought years identified in our climatic data (Table S3 and Figure S1). b) Percentage of \Qp trees affected by GC > 50 \% by site. Black line shows number of trees (right-axis). Data for number of trees > 2 is shown.
-}  
-\label{fig:dendro:s2chronos}
+\includegraphics[width=\textwidth]{img/dendro/dendro-s3correlation} 
+\caption{\textbf{a)} Correlation among site chronologies (CA-High, CA-Low and SJ) in different time domains after pre-filtering the time series with increasing size of the moving-average window (1 to 40 years). Each site chronology was smoothed using centered moving averages with different window sizes (1 to 40 years), and then Pearson’s correlation coefficient between the each pair of chronologies was calculated. Significance was tested using 1000 bootstrap replicates and with 95\% confidence intervals built using the R package boot. \textbf{b)} Correlation between indices of resilience (\emph{Rt}, resistance; \emph{Rc}, recovery; \emph{Rs}, Resilience) using periods of several lengths (2, 3 and 4 years after a drought).}  
+\label{fig:dendro:s3correlations}
+\end{figure}
+
+\newpage
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{img/dendro/dendro-s4profile} 
+\caption{EVI annual profile (average of the period 2000-2016) for \Qp forests in Sierra Nevada and drought events. Horizontal bars correspond to the most severe droughts for Sierra Nevada since 1900 (computed as in Table S3). Their position indicates the start and end months of each drought event. Bars lengths show the duration of the drought event \autocite[number of consecutive months with SPEI lower than -1.28, see][]{Pascoaetal2017DroughtTrends}.}  
+\label{fig:dendro:s4profile}
+\end{figure}
+
+\newpage
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{img/dendro/dendro-s5resilience.jpg} 
+\caption{Resilience metrics of the tree growth for severe drought events since 1950 (excluding 1995 drought event). Left: Resistance; Center: Recovery; Right: Resilience. Points indicate resilience metrics for oak populations: SJ (blue), CA-High (red) and CA-Low (green). Resilience metrics were computed for each population (sample depth > 10) and drought event. The gray line represents overall relationship for each Resilience metrics.}  
+\label{fig:dendro:s5resilience}
+\end{figure}
+
+\newpage
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{img/dendro/dendro-s6corclimate.jpg} 
+\caption{Correlation coefficients found by relating tree-ring residual chronologies (RWI) of \Qp and monthly climatic data: precipitation and 6-month SPEI \textbf{(a)}, minimum \textbf{(b)} and maximum \textbf{(c)} temperatures. green bars: northern site (SJ); light blue bars: low-elevation southern site (CA-Low); and dark blue bars: high-elevation southern site (CA-High). Asterisks indicate significant (\(p<0.05)\) correlation coefficients.}  
+\label{fig:dendro:s6corclimate}
 \end{figure}
