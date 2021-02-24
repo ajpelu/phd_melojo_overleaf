@@ -592,7 +592,7 @@
 % > formats: \chapter
 % ---------------------------
 \renewcommand*\chapterheadstartvskip{\vspace*{-8.75em}}
-\renewcommand*\chapterheadendvskip{\vspace*{2.5\baselineskip}}
+\renewcommand*\chapterheadendvskip{\vspace*{4\baselineskip}}
 \renewcommand*{\chapterformat}{%
     \ctchapternumber{\thechapter}%
 }
@@ -616,8 +616,8 @@
 }
 \newcommand{\ctchaptertitle}[1]{%
     \usekomafont{chapter}%
-    \begin{minipage}[t]{0.7\textwidth}%
-        \vspace*{5.85em}%
+    \begin{minipage}[t]{0.8\textwidth}%
+        \vspace*{13em}%
         \raggedright%
         #1%
     \end{minipage}%
