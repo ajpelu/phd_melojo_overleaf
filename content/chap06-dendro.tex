@@ -1,6 +1,6 @@
 % !TEX root = ../my-thesis.tex
 %
-%\selectlanguage{english}  
+\selectlanguage{english}  
 \chapter{Land-use legacies and climate change as a double challenge to oak forest resilience: mismatches of geographical and ecological rear edges}\label{sec:dendro}
 
 \mbox{}
@@ -89,12 +89,12 @@ To evaluate the effects of drought events on ecosystem resilience (using greenne
 \label{fig:dendro:schemadendro}
 \end{figure}
 
-\begin{table}[]
+\begin{table}
 \caption{Characteristics of the mean tree-ring chronologies. Length values in parentheses indicate the number of years replicated with more than five series. \emph{RW} = mean annual ring width (standard deviation in parenthesis). MS = mean sensitivity. AR(1) = mean autocorrelation of raw series. Rbt = mean correlation between series. EPS = mean expressed population signal. EPS and Rbt were calculated for the mean residual chronologies of growth indices.}
 \resizebox{\linewidth}{!}{
 \begin{tabular}{@{}lllllllllll@{}}
 \toprule
-Site & First    year & Last    year & Length    (years) & \#    trees & \#    cores & RW    (mm) & MS & AR(1) & Rbt & EPS \\ \midrule
+Site & First year & Last year & Length (years) & \#    trees & \#    cores & RW (mm) & MS & AR(1) & Rbt & EPS \\ \midrule
 CA-Low & 1836 & 2016 & 181 (164) & 15 & 30 & 1.253 (0.781) & 0.208 & 0.799 & 0.520 & 0.897 \\
 CA-High & 1819 & 2016 & 198 (188) & 15 & 30 & 1.500 (0.879) & 0.203 & 0.827 & 0.522 & 0.907 \\
 SJ & 1921 & 2016 & 96 (90) & 20 & 48 & 1.725 (1.207) & 0.319 & 0.692 & 0.637 & 0.959 \\ \bottomrule
@@ -102,7 +102,7 @@ SJ & 1921 & 2016 & 96 (90) & 20 & 48 & 1.725 (1.207) & 0.319 & 0.692 & 0.637 & 0
 \label{tab:dendro:chronologies}
 \end{table}
 
-\subsection{Statistical analysis}\label{sec:dendroStats}
+\subsection{Statistical analysis}\label{sec:dendro:Stats}
 Differences between sites for height, DBH, and competition indices were analyzed using non-parametric Kruskal-Wallis rank sum tests. When significant differences were detected, multiple comparisons were run using the Dunn's-test with Bonferroni adjustment to correct for significance.
 
 The severe drought events since 1901 were identified using SPEI-12. They were characterized in terms of duration, severity and intensity \autocite[see][]{Spinonietal2015EuropeanDrought}. In a first step, the impact of drought in greenness and growth was explored using the \(EVI_{sa}\) and the mean RWI site chronologies (\figref{fig:dendro:schemadendro}). Additionally the relationships between climatic variables and tree-growth variables (RWI and BAI site chronologies) were assessed using bootstrapped Pearson's correlations estimated using treeclim \autocite{ZangBiondi2015TreeclimPackage}. The non-climatic disturbance impacts on tree-growth were evaluated using site disturbance chronologies (built using growth changes on tree growth).
@@ -117,7 +117,7 @@ Responses of vegetation to disturbances were explored in the short- and the long
 
 For each of the three resilience indices studied, we used robust two-way ANOVAs to test for differences between drought events (2005 and 2012) and the oak populations studied (northern and southern exposures). These tests were used because original and log-transformed data did not follow the assumptions of normality or homogeneity of variance \autocite{Wilcox2012IntroductionRobust}. Robust measures of central tendency (M-estimator based on Huber's Psi) were used because they were close to the mean value in all cases \autocite{Wilcox2012IntroductionRobust}. When the robust ANOVA test was run, data were bootstrapped 3000 times and trimmed automatically to control the potential influence of outliers. \emph{Post-hoc} differences were assessed pairwise using a similar bootstrap test. All the robust ANOVA and \emph{post-hoc} tests were carried out using the WRS2 R package \autocite{Mairetal2017WRS2Wilcox}. The level of significance was set to 0.05 and adjusted for multiple comparisons.
 
-\section{Results}\label{sec:dendroResults}
+\section{Results}\label{sec:dendro:Results}
 \subsection{Temporal trends in vegetation greenness}\label{sec:dendro:ResultsEVI}
 
 The analysis of temporal trends in greenness showed that 78.9\% of the EVI pixels followed a positive trend for the 2000-2016 period. The lowest values of EVI standardized anomalies for the study period were recorded during the 2005 drought, and the minimum EVI values were expressed in the northern (dry) population (\figref{fig:dendro:evisa}a). A ``browning'' episode (\(\mathrm{EVI_{sa}} < -1\)) was found during this drought event, whereas no changes in greenness in response to the 2012 drought were detected (\figref{fig:dendro:evisa}b).
@@ -171,7 +171,7 @@ Although the 2012 drought event was more severe and intense than that of 2005 (\
 
 The high drought-resilience values reported here, in addition to the potential role of local adaptation {[}\emph{i.e.} high values of genetic resilience for oak forests on Sierra Nevada; \textcite{ValbuenaCarabanaGil2013GeneticResilience}; \textcite{ValbuenaCarabanaGil2017CentenaryCoppicing}{]}, suggest that land-use also has a key role to determine tree resilience to drought and the range edge of species. Our findings agree with those of studies showing that the assumed higher vulnerability of current geographical dry edges does not necessarily hold \autocite[\emph{e.g.}][]{CavinJump2017HighestDrought}. In our case, this can be explained by the fact that the current geographical rear-edge does not match with the potential ecological rear edge for the species because this has been modified and determined mostly by human use. \textcite{MartinezVilalta2018RearWindow} pointed out the importance of local adaptation and plasticity, and also of local environmental factors on the vulnerability shown by rear-edge populations. Our results highlight the ample small-scale variability at the ecological boundary and thus the rear edges need to be more clearly defined and delineated. All the above points, together with the characteristic high resprouting ability of the species, show the long-term persistence of these populations \autocite{BellinghamSparrow2000ResproutingLife}. It should be mentioned that we studied only adult individuals established decades or centuries ago, meaning that it needs to be assessed whether the high resilience found is expressed at the species level (\emph{i.e.} also including regeneration) or only in adult trees. The rear-edge might differ for different ontogenic stages. It is important to assess whether seedling regeneration and recruitment are vulnerable, as in other Mediterranean species at some locations including their xeric limit \autocite{Castroetal2004SeedlingEstablishment,VilaCabreraetal2011StructuralClimatic,GeaIzquierdoetal2015ThisEnd}.
 
-\subsection{Land-use legacies in relation to forest response under climate change and to the present rear edge}\label{sec:dendroLand}
+\subsection{Land-use legacies in relation to forest response under climate change and to the present rear edge}\label{sec:dendro:Land}
 
 The review of historical documents revealed that forest clearings, firewood removal, charcoal production, and mining have strongly affected the forests on Sierra Nevada (\tabref{tab:dendro:reviewusos}), where an estimated historical loss of broadleaf \emph{Quercus} species has approached 90\% in tree cover at medium and low elevations \autocite{JimenezOlivenciaetal2015MedioSiglo}. Together with the analysis of the disturbance chronologies, the observed notable differences in stand structure, tree size, and age suggest different forest histories and a different management origin (\emph{i.e.} land-use legacy) between northern (coppice) and southern populations (high forest, open woodland). On the northern slopes of Sierra Nevada (\emph{e.g.} the SJ site), land uses have been historically distributed along an elevational gradient: grasslands and shrublands for cattle farming at the highest elevations; next forest stands with some croplands; and, finally, irrigated terraces with tree crops at the lowest elevations \autocite{JimenezOlivenciaetal2015MedioSiglo}. In addition, other activities such as mining must have altered the forest structure, \emph{e.g.} the SJ site has many small mines and quarries that were exploited intermittently throughout history. The release growth event expressed in the 1940s concurs with a period of maximum mining activity in this area (1925 to 1957), during which timber use increased for mine tunnels and furnaces, these also requiring large amounts of firewood to melt the mineral (\tabref{tab:dendro:reviewusos}). This heavy exploitation of the neighboring forest resources must have affected a significant part of this oak woodland, as shown by growth of the remnant trees at the northern site (\figref{fig:dendro:s2chronos}b).
 
