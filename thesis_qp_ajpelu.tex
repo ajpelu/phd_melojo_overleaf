@@ -54,6 +54,14 @@
 \input{content/titlepages}		% INCLUDE: all titlepages
 \cleardoublepage
 
+\pagestyle{empty}               
+\input{content/preambles/garantia}        % GARANTIA
+\cleardoublepage
+
+\pagestyle{empty}               
+\input{content/preambles/declaration}        % GARANTIA
+\cleardoublepage
+
 \pagestyle{plain}				% display just page numbers
 \input{content/abstract}		% INCLUDE: the abstracts (english and german)
 \cleardoublepage
@@ -66,6 +74,9 @@
 \tableofcontents				% display table of contents
 \cleardoublepage
 
+
+
+
 % --------------------------
 % Body matter
 % --------------------------
@@ -76,13 +87,14 @@
 %% Uncomment the following lines using the \part command
 %% to add part sections
 \part{Example Part}
-\input{content/chapter-introduction}   % INCLUDE: introduction
+%\input{content/chapter-introduction}   % INCLUDE: introduction
 \input{content/chap01-objectives}   
 \input{content/chap02-metodologia}  
 \input{content/chap03-multivariante}   
 \input{content/chap05-carbon} 
 \input{content/chap06-dendro} 
 \input{content/chap07-ontology}   
+\input{content/chap08-es} 
 
 %\part{Additional Example Part}
 %\input{content/chapter-system}         % INCLUDE: system
@@ -121,9 +133,6 @@
 \cleardoublepage
 \input{content/colophon}
 
-\cleardoublepage
-\input{content/declaration}
-\clearpage
 
 \newpage
 \mbox{}
