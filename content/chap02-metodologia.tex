@@ -1,7 +1,7 @@
 % !TEX root = ../my-thesis.tex
 %
 \selectlanguage{spanish} 
-\chapter{Metodología general}
+\chapter{\textcolor{ctcolormain}{Metodología general}}
 \label{sec:metodologia}
 
 \section{El roble melojo}
@@ -53,6 +53,31 @@ En Sierra Nevada, los melojares ocupan actualmente una extensión de 3 400 ha \a
 Aunque representan menos del 7\% de la superficie forestal existente en Sierra
 Nevada (\figreft{fig:metodologia:mapa-sn}c), tienen una alta singularidad ecológica, presentando una alta diversidad de especies vegetales en comparación con las otras formaciones forestales \autocite{GomezAparicioetal2009ArePine,PerezLuqueetal2014SinfonevadaDataset},  y albergando diferentes especies vegetales consideradas relictas \autocite{Loriteetal2008PhytosociologicalReview, Blancaetal1998ThreatenedVascular} (Ver apéndice \ref{sec:appendix:multivar}). 
 
+\section{Análisis del patrón de colonización de cultivos abandonados}\label{sec:metodologia:coloniza}
+
+En el capítulo \ref{sec:coloniza} se estudia el patrón de colonización de los cultivos de montaña abandonados. La aproximación que utilizamos consistió en el estudio de los diferentes módulos implicados en la dispersión \autocite[][]{LundbergMoberg2003MobileLink,Nathanetal2012DispersalKernels}, a saber: fuente semillera (bosques de \Qpy); vector de dispersión (animales dispersores de bellotas); y  sumidero receptor de semillas (cultivos abandonados).
+
+Se seleccionaron 5 cultivos abandonados situados en dos localidades de Sierra Nevada que representan las dos vertientes: robledal de San Juan (Robledal del río Genil; oientación NW); y robledal de Cáñar (orientación sur). Para cada uno de los cultivos abandonados, se llevó a cabo un análisis de la estructura forestal circundante y del patrón de regeneración. Para ello se  distribuyeron al azar transectos lineales de vegetación (30x10 m) en el cultivo abandonado; en los bordes del bosque y dentro de los bosques circundantes (\figreft{fig:metodologia:coloniza}). El número de transectos en cada uno de los cultivos abandonados fue proporcional al tamaño de los campos de cultivo abandonado (ver tabla XX). 
+
+En cada transecto de vegetación se registraron todos los individuos y se midieron la altura y el diámetro de los mismos (diametro base para individuos con altura \textless 150 cm; y diámetro a la altura del pecho para individuos con altura \textgreater 150 cm). Para cada transecto se calculó la abundancia de juveniles, sin diferenciar entre regeneración vegetativa y sexual debido a la difucultad que presenta la especie por su carácter rebrotador. Dentro de los juveniles se diferenciaron varias etapas de reclutamiento en función del tamaño de los individuos \autocite[\emph{e.g.}][]{Plieningeretal2010LargeScalePatterns}. Consideramos cinco categorías de tamaño basadas en la altura (cada 30 cm). 
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{img/metodologia/metodologia-coloniza.pdf}
+    \caption{Esquema metodológico de análisis del patrón de colonización de cultivos. Se estudió la estructura de la fuente semillera (1), el estado de la comunidad de arrendajos (el principal dispersor de semillas de roble)(3), y la regeneración observada en los cultivos abandonados (2)}
+    \label{fig:metodologia:coloniza}
+\end{figure}
+
+Para estudiar la comunidad de dispersantes se utilizó una serie temporal de datos de abundancia del arrendajo (\emph{Garrulus glandarius}), el principal dispersor de las bellotas de \Qpy en Sierra Nevada \autocite[][]{Gomez2003ImpactVertebrate}. Esta serie de datos procede del seguimiento de aves paseriformes realizado en el marco del Observatorio de Cambio Global de Sierra Nevada \autocites{Zamoraetal2017MonitoringGlobal,BareaAzconetal2012PasseriformesOtras}. En concreto se utilizaron datos para los robledales de la zona de estudio (Robledal de Cáñar y Robledal de San Juan). Estos muestreos consistieron en censos realizados a lo largo de transectos lineales con un ancho de banda fijo de 50 m (25 a cada lado del observador), en donde se registraron todos los avistamientos \autocites{BareaAzconetal2012PasseriformesOtrasa, ZamoraBareaAzcon2015LongTermChanges}. 
+
+Todos los datos fueron debidamente documentados y publicados en repositorios institucionales: véase \citet{PerezLuqueetal2015DatasetMIGRAME} para una descripción detallada del conjunto de datos de los transectos de vegetación; y \citet{PerezLuqueetal2016DatasetPasserine} para la descripción del conjunto de datos sobre aves paseriformes. 
+
+\section{Estimación de biomasa a nivel de parcela}\label{sec:metodologia:biomasa}
+
+En el capítulo \ref{sec:carbon} se llevó a cabo una estimación de la biomasa utilizando ecuaciones alométricas \autocite[ver][]{Monteroetal2005ProduccionBiomasa} a partir de datos de inventarios forestales. Los datos de campo se obtuvieron a partir de una recopilación de varios inventarios forestales y proyectos de investigación realizados en Sierra Nevada. En primer lugar, se seleccionaron las parcelas incluidas en la distribución actual de \Qp en Sierra Nevada \autocite{PerezLuqueetal2019MapEcosystems}. A continuación se seleccionaron únicamente las parcelas con información completa (aquellas en las que se midieron todos los individuos arbóreos con DBH \textgreater{} 7,5 cm), y los rodales puros (composición \textgreater{} 70\%). De estas parcelas, se aplicó un filtro espacial para descartar las parcelas superpuestas, y un filtro temporal, descartando los inventarios de antiguos (es decir, de más de 10 años). Todas las parcelas seleccionadas se midieron entre 2012 y 2020. 
+
+Además de ello, y para tener una representación de todas las poblaciones de robledal, se muestrearon parcelas circulares adicionales (de 9 a 16 m de radio) entre octubre de 2019 y marzo de 2020. En cada parcela se marcaron y midieron todos los ejemplares arbóreos. Se anotó el diámetro a la altura del pecho (DBH) utilizando un calibre forestal graduado (precisión de 0.1 cm). La altura de cada árbol se midió utilizando un hipsómetro (Vertex 5, Haglöf Sweden) con una precisión de 0.1 metros. También se anotó para cada ejemplar el azimut y la distancia respecto al centro de la parcela, cuya posición fue registrada mediante la utilización de un GPS submétrico (Leica Zeno 20 GIS, Leica Geosystems, Suiza). Las parcelas se seleccionaron en proporción a la extensión de los diferentes estratos ecológicos, proporcionando rodales representativos con una variedad de estructura de rodal y condiciones de sitio en las diferentes poblaciones de robledal de Sierra Nevada. 
+
 \section{Muestreos dendrocronológicos}
 \label{sec:metodologia:dendro}
 
@@ -91,7 +116,6 @@ Se muestrearon todos los árboles vivos con DBH \textgreater{} 7.5 cm dentro de 
 	Esquema de los muestreos para estimación de la competencia (\textbf{a}). Se replantean parcelas de 10 m de radio en torno al árbol focal. Cada árbol vecino es identificado (\textbf{b}) y medido (\textbf{c}), anotando la distancia y azimuth respecto al centro, así como su altura y DBH.}\label{fig:metodologia:competence}
 \end{figure}
 
-
 \section{Índices de Vegetación}\label{sec:metodologia:modis-iv}
 
 La información derivada de las imágenes de satélite (teledetección) proporciona un medio relativamente barato y accesible para obtener series temporales de información, a distintas escalas espaciales, sobre
@@ -117,7 +141,6 @@ Las imágenes de EVI y NDVI fueron derivadas del producto MOD13Q1 obtenido por e
 
 Para cada uno de los índices, generamos series temporales desde 2000 hasta 2014 (NDVI) (capítulo \ref{sec:onto}) y 2016 (EVI) (capítulo \ref{sec:dendro}). De las series temporales generadas se derivaron los perfiles anuales (\figreft{fig:onto:indicator}) y se calcularon diferentes métricas (promedio anual, estacional, máximo, mínimo, etc) en función de las necesidades de estudio (ver capítulos \ref{sec:dendro} y \ref{sec:onto}). 
 
-
 \section{Estimación de indicadores de la cubierta de nieve}\label{sec:metodologia:modis-nieve}
 La producción primaria de la vegetación depende de multitud de factores biofísicos. En regiones de montaña como Sierra Nevada, la nieve puede jugar un papel determinante en este sentido. La cantidad de agua suministrada por la nieve puede explicar, en parte, el funcionamiento de ecosistemas forestales cercanos al límite del árbol. En el capítulo \ref{sec:onto} se evalúan las relaciones entre la duración de la cubierta de nieve y la productividad en los robledales de \emph{Q. pyrenaica}. Para ello, además de los índices de vegetación antes mencionados, se ha generado una serie temporal sobre la dinámica de la cubierta de nieve en
 los robledales de Sierra Nevada \autocites{PerezLuqueetal2016TemporalTrend,BonetGarciaetal2015AnalisisTendencias}. A partir del producto MOD10A2 de MODIS \autocites{Halletal2002MODISSnowcover}, que presenta una periodicidad de 8 días y una resolución espacial de 500 m, se calculó el índice diferencial normalizado de nieve \textbf{NDSI} (\emph{Normalized Difference Snow Index}). Se trata de un ratio de bandas espectrales que aprovecha la mayor reflectancia de la nieve en las longitudes de onda visible, y baja reflectancia en la región infrarroja de onda corta
@@ -132,14 +155,6 @@ nieve} (\emph{scd}, \emph{snow cover duration}): se define como el número de d�
 \item \emph{fecha de inicio de la cubierta de nieve} (\emph{scod}, \emph{snow cover onset date}): primera fecha del año hidrológico en que el píxel tiene nieve. Este indicador es útil para identificar los cambios en el inicio de la temporada de nieve.
 \item \emph{fecha de fusión de la capa de nieve} (\emph{scmd}, \emph{snow cover melting date}): es la última fecha del año hidrológico en que el píxel tiene nieve. Este indicador proporciona información útil sobre el proceso de fusión de la nieve.
 \end{itemize} 
-
-\section{Estimación de biomasa a nivel de parcela}\label{sec:metodologia:biomasa}
-
-En el capítulo \ref{sec:carbon} se llevó a cabo una estimación de la biomasa utilizando ecuaciones alométricas \autocite[ver][]{Monteroetal2005ProduccionBiomasa} a partir de datos de inventarios forestales. Los datos de campo se obtuvieron a partir de una recopilación de varios inventarios forestales y proyectos de investigación realizados en Sierra Nevada. En primer lugar, se seleccionaron las parcelas incluidas en la distribución actual de \Qp en Sierra Nevada \autocite{PerezLuqueetal2019MapEcosystems}. A continuación se seleccionaron únicamente las parcelas con información completa (aquellas en las que se midieron todos los individuos arbóreos con DBH \textgreater{} 7,5 cm), y los rodales puros (composición \textgreater{} 70\%). De estas parcelas, se aplicó un filtro espacial para descartar las parcelas superpuestas, y un filtro temporal, descartando los inventarios de antiguos (es decir, de más de 10 años). Todas las parcelas seleccionadas se midieron entre 2012 y 2020. 
-
-Además de ello, y para tener una representación de todas las poblaciones de robledal, se muestrearon parcelas circulares adicionales (de 9 a 16 m de radio) entre octubre de 2019 y marzo de 2020. En cada parcela se marcaron y midieron todos los ejemplares arbóreos. Se anotó el diámetro a la altura del pecho (DBH) utilizando un calibre forestal graduado (precisión de 0.1 cm). La altura de cada árbol se midió utilizando un hipsómetro (Vertex 5, Haglöf Sweden) con una precisión de 0.1 metros. También se anotó para cada ejemplar el azimut y la distancia respecto al centro de la parcela, cuya posición fue registrada mediante la utilización de un GPS submétrico (Leica Zeno 20 GIS, Leica Geosystems, Suiza). Las parcelas se seleccionaron en proporción a la extensión de los diferentes estratos ecológicos, proporcionando rodales representativos con una variedad de estructura de rodal y condiciones de sitio en las diferentes poblaciones de robledal de Sierra Nevada. 
-
-
 
 \section{Conjuntos de datos y software utilizado}\label{sec:metodologia:datos}
 
@@ -167,9 +182,9 @@ A continuación se muestran un listado de los conjuntos de datos documentados y 
 Y derivados de ellos se han generado diferentes artículos de datos (Data Papers) sometidos al proceso de revisión por pares y publicados en revistas indexadas: 
 
 \begin{itemize}
-    \item Pérez-Luque, A. J., F. J. Bonet, R. Pérez-Pérez, R. Aspizua, J. Lorite, and R. Zamora. 2014. Sinfonevada: Dataset of floristic diversity in Sierra Nevada forests (SE Spain). PhytoKeys 35:1–15.
-    \item Pérez-Luque, A. J., R. Zamora, F. J. Bonet, and R. Pérez-Pérez. 2015. Dataset of MIGRAME project (global change, altitudinal range shift and colonization of degraded habitats in Mediterranean mountains). PhytoKeys 56:61–81.
-    \item Pérez-Luque, A. J., J. M. Barea-Azcón, L. Álvarez-Ruiz, F. J. Bonet-García, and R. Zamora. 2016. Dataset of Passerine bird communities in a Mediterranean high mountain (Sierra Nevada, Spain). ZooKeys 552:137–154.
+    \item Pérez-Luque, A. J., F. J. Bonet, R. Pérez-Pérez, R. Aspizua, J. Lorite, and R. Zamora. 2014. Sinfonevada: Dataset of floristic diversity in Sierra Nevada forests (SE Spain). PhytoKeys 35:1-15.
+    \item Pérez-Luque, A. J., R. Zamora, F. J. Bonet, and R. Pérez-Pérez. 2015. Dataset of MIGRAME project (global change, altitudinal range shift and colonization of degraded habitats in Mediterranean mountains). PhytoKeys 56:61-81.
+    \item Pérez-Luque, A. J., J. M. Barea-Azcón, L. Álvarez-Ruiz, F. J. Bonet-García, and R. Zamora. 2016. Dataset of Passerine bird communities in a Mediterranean high mountain (Sierra Nevada, Spain). ZooKeys 552:137-154.
 \end{itemize}
 
 

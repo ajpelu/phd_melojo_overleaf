@@ -13,3 +13,4 @@ https://tex.stackexchange.com/questions/390221/clean-thesis-template-references-
 # TODO 
 - [] Referenciar figuras y tablas dentro de cada supplementary 
 https://tex.stackexchange.com/questions/458919/convert-final-appendix-to-a-supplementary-material-section 
+
