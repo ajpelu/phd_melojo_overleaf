@@ -34,3 +34,11 @@ OLD
 	\item Analizar si la discriminación en diferentes grupos, basada en características ambientales, se refleja en una discriminación basada en la composición de especies de las diferentes poblaciones así como de la estructura (atributos forestales) y el funcionamiento (regeneración y productividad). Es decir, ¿hay relación entre el agrupamiento basado en factores abióticos y el agrupamiento de composición, estructural y funcional?. 
 \end{itemize}
 
+
+
+
+Parrafo ES 
+usepackage{comment}
+begin{comment}
+In addition to the production of tangible forest products, such as timber, fuelwood, cork, mushrooms, medicinal and aromatic plants, etc., they also provide less tangible ones, such as regulation of water and nutrient cycles, carbon sequestration and climate change mitigation, protection and conservation of biodiversity, as well as provision of cultural services related to experience and recreation in nature \autocite{Acharyaetal2019GlobalTrend,Baetenetal2019IdentifyingTree,deGrootetal2002TypologyClassification,FelipeLuciaetal2018MultipleForest,Gamfeldtetal2013HigherLevels,Iversonetal2018EcosystemServices,Stengeretal2009ValuingEnvironmental}. 
+end{comment}
