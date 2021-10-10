@@ -11,7 +11,8 @@
 https://tex.stackexchange.com/questions/390221/clean-thesis-template-references-not-compressed 
 - Cuando generemos la bibliografia final. Todos los @incollection --> a @inbook
 - En inbook en editores: Poner nombres completos, eg: Pérez-Luque, Antonio Jesús
-- 
+- He quitado los duplicados 
+- En cleanthesis.sty L380 he incluido annotation=false para evitar que aparezcan anotaciones eg. IPCC2006
 
 
 
