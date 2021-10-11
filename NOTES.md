@@ -13,6 +13,10 @@ https://tex.stackexchange.com/questions/390221/clean-thesis-template-references-
 - En inbook en editores: Poner nombres completos, eg: Pérez-Luque, Antonio Jesús
 - He quitado los duplicados 
 - En cleanthesis.sty L380 he incluido annotation=false para evitar que aparezcan anotaciones eg. IPCC2006
+- Si cambio @manual a @Manual, los nombres de los paquetes se mantienen bien.
+- He arreglado la biblio. He añadido \emph{} para los nombres de las especies. 
+- Quedaría solamente revisar los pkgs. Aquellos que pongan manual
+
 
 
 
