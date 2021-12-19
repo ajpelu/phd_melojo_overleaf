@@ -42,7 +42,7 @@
 % uncomment the following command to fill up pages with
 % whitespace instead of aligning the first and last lines
 % of a page (see \raggedbottom vs. \flushbottom)
-%\raggedbottom
+\raggedbottom
 
 % --------------------------
 % rename document parts
@@ -83,9 +83,9 @@
 \cleardoublepage
 
 
-\pagestyle{plain}				% display just page numbers
-\input{content/abstract}		% INCLUDE: the abstracts (english and german)
-\cleardoublepage
+%\pagestyle{plain}				% display just page numbers
+%\input{content/abstract}		% INCLUDE: the abstracts (english and german)
+%\cleardoublepage
 %
 \input{content/acknowledgement} % INCLUDE: acknowledgement
 \cleardoublepage
@@ -104,6 +104,13 @@
 \pagenumbering{arabic}			% arabic page numbering
 \setcounter{page}{1}			% set page counter
 \pagestyle{scrheadings}			% header and footer style
+
+
+\renewcommand{\partname}{Parte}
+\part*{Resúmen / Abstract}
+%\input{content/chapter-introduction}   % INCLUDE: introduction
+\input{content/abstract} 
+
 
 %% Uncomment the following lines using the \part command
 %% to add part sections
@@ -126,6 +133,8 @@
 \part{Discusión General}
 %\part{Additional Example Part}
 \input{content/chap09-discussion}       
+\renewcommand{\partname}{Parte}
+\part{Conclusiones}
 \input{content/chap10-conclussions}     % INCLUDE: conclusion
 
 % --------------------------
