@@ -131,7 +131,10 @@
 % --------------------------
 % Back matter
 % --------------------------
-%
+
+\renewcommand{\partname}{Parte}
+\part{Bibliografía y Apéndices}
+
 {%
 \setstretch{1.1}
 %\renewcommand{\bibfont}{\normalfont\small}
@@ -139,7 +142,7 @@
 \setlength{\biblabelsep}{0pt}
 \setlength{\bibhang}{.25\bibhang}
 \setlength{\bibitemsep}{0.1\baselineskip plus 0.1\baselineskip}
-\printbibliography
+\printbibliography[title={Bibliografía}]
 %\printbibliography[nottype=online]
 %\newrefcontext[labelprefix={@}]
 %\printbibliography[heading=subbibliography,title={Webpages},type=online]
@@ -155,8 +158,7 @@
 %\lstlistoflistings
 %\cleardoublepage
 
-\renewcommand{\partname}{Parte}
-\part{Apéndices}
+
 \appendix\cleardoublepage
 \input{content/chapter-appendix}       % INCLUDE: appendix
 
