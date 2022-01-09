@@ -84,8 +84,14 @@
 
 % OPTION colortheme
 % --> values = bluemagenta|bluegreen
-\define@choicekey*[ct]{cthesis}{colortheme}[\val\themenr]{bluemagenta,bluegreen}[bluemagenta]{\def\cthesis@colortheme{\themenr}}
+% \define@choicekey*[ct]{cthesis}{colortheme}[\val\themenr]{bluemagenta,bluegreen}[bluemagenta]{\def\cthesis@colortheme{\themenr}}
+
+% --> values = bluemagenta|bluegreen|graygray|blackblack
+\define@choicekey*[ct]{cthesis}{colortheme}[\val\themenr]{bluemagenta,bluegreen,graygray,blackblack}[bluemagenta]{\def\cthesis@colortheme{\themenr}}
 \setkeys[ct]{cthesis}{colortheme=bluemagenta}
+
+
+
 
 % OPTION bibsys
 % --> values = biber|bibtex
@@ -154,6 +160,7 @@
 	\colorlet{ctcolorfloatlabel}{ctcolormain}
 	\colorlet{ctcolorlistlabel}{ctcolormain}
 
+
 	\ifcase\cthesis@colorize
 		% case = 0 (colorize == full)
 		% do nothing
@@ -172,6 +179,7 @@
 		% --> footer colors
 		\colorlet{ctcolorfooterline}{ctcolorgray}
 		\colorlet{ctcolorfootertitle}{ctcolorgray}
+		\colorlet{ctcolorfootermark}{ctcolorgray}
 		% --> sectioning colors
 		\colorlet{ctcolortitle}{ctcolorblack}
 		\colorlet{ctcolorpartnum}{ctcolorblack}
@@ -182,6 +190,7 @@
 		% --> text colors
 		\colorlet{ctcolorfloatlabel}{ctcolorblack}
 		\colorlet{ctcolorlistlabel}{ctcolorblack}
+		
 	\else
 	\fi
 }
@@ -203,6 +212,16 @@
 	\cthesissetcolor{cmyk}{.61, .47, .03, 0}{.48, .05, .91, 0}%
 }
 
+% sets the gray-gray color theme (gray/gray)
+\def\cthesissetcolorgraygray{%
+	\cthesissetcolor{cmyk}{.80, .80, .80, 0}{.60, .60, .60, 0}%
+}
+
+% sets the blackblack color theme (black/black)
+\def\cthesissetcolorblackblack{%
+	\cthesissetcolor{cmyk}{0, 0, 0, 1}{0, 0, 0, 1}%
+}
+
 % defines general colors
 \definecolor{ctcolorblack}{gray}{0}
 \definecolor{ctcolorgray}{gray}{.5}
@@ -216,6 +235,12 @@
 \or
 	% case 1 (colortheme == bluegreen)
 	\cthesissetcolorbluegreen
+\or
+	% case 2 (colortheme == graygray)
+	\cthesissetcolorgraygray
+\or
+	% case 3 (colortheme == blackblack)
+	\cthesissetcolorblackblack
 \else
 	% all other cases
 	\cthesissetcolorbluemagenta
@@ -432,7 +457,7 @@
         \hspace{.25cm}%
         \protect\begin{minipage}[t]{.65\textwidth}%
             #1%
-        \protect\end{minipage}%
+        \protect\end{minipage}% 
     }{}%
 }
 
@@ -553,7 +578,6 @@
     \color{ctcolorfootertitle}%
     \normalfont\footnotesize \tgherosfont%
 }
-%
 % headings
 \setkomafont{part}{\thesispartfont} % for chapter entries
 \setkomafont{chapter}{\thesischapterfont} % for chapter entries
